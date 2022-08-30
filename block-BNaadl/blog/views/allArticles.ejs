@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <title>Document</title>
+</head>
+<body>
+    <button><a href="/articles/add">ADD NEW</a></button>
+
+    <h1>You are looking at All Articles</h1>
+    <% articles.forEach((article) => { %>
+   <article class="container padding">
+        <br>
+        <h2><%= article.title %></h2>
+        <p><%= article.description %></p>
+        <button><a href="/articles/<%= article._id %>">Read More</a></button>
+    </article>    
+    <% }) %>
+    
+</body>
+</html>
