@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <title>Document</title>
+</head>
+<body>
+    <form action="/books/add" method="post" class="container padding  column">
+        <input class="margin" type="text" name="title" placeholder="Title">
+        <textarea class="margin" name="summary" id="" cols="30" rows="10">Book Summary</textarea>
+        <input class="margin" type="number" name="pages" placeholder="Pages">
+        <input class="margin" type="text" name="publication" placeholder="Publication">
+        <select class="margin" name="author" id="author">
+            <option value="Joel">Joel</option>
+            <option value="Rahul">Rahul</option>
+            <option value="Priyanshu">Priyanshu</option>
+            <option value="Anup">Anup</option>
+        </select>
+        <select class="margin" name="category" id="category">
+            <option value="Fiction">Fiction</option>
+            <option value="NonFiction">NonFiction</option>
+            <option value="Biography">Biography</option>
+            <option value="Kids">Kids</option>
+        </select>
+        <!-- <input type="image" name="image" placeholder="Image"> -->
+        <input type="submit" class="btn">
+    </form>
+</body>
+</html>
