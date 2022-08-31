@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <title>Document</title>
+</head>
+<body>
+    <h1>List of All Authors</h1>
+   <% authors.forEach((auth) => { %>
+    <div class="container padding column">
+        <h2 class="text-brown"><%= auth.name %></h2>
+        <h3 class="text-green"><%= auth.email %></h3>
+        <h3 class="text-pink"><%= auth.country %></h3>
+        <button class="btn-small"><a href="/author/<%= auth._id %>/books">All Authored Books</a></button>
+    </div>
+   <% }) %>
+</body>
+</html>
