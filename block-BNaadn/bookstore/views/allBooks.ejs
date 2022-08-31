@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <title>Document</title>
+</head>
+<body>
+    <h1>List of All Books</h1>
+   <% books.forEach((book) => { %>
+    <div class="container padding column">
+        <!-- <img src="<%= book.cover_img %>" alt="img"> -->
+        <h2><%= book.title %></h2>
+        <p class="text-brown"><%= book.summary %></p>
+        <p class="text-pink"><%= book.author %></p>
+        <span class="text-blue">Pages: <%= book.pages %></span>
+        <span class="text-green">Publication: <%= book.publication %></span>
+        <button class="btn-small"><a href="/book/<%= book._id %>">Read More</a></button>
+
+    </div>
+
+   <% }) %>
+</body>
+</html>
