@@ -8,12 +8,9 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>List of All Books</h1>
-   <% cat.forEach((cat) => { %>
-    <div class="container padding column">
-        <h2 class="text-brown"><%= cat.name %></h2>
-        <button class="btn-small"><a href="">All Category Books</a></button>
-    </div>
-   <% }) %>
+    <form action="/category/add" method="post" class="container padding  column">
+        <input class="margin" type="text" name="name" placeholder="Category">
+        <input type="submit" class="btn">
+    </form>
 </body>
 </html>
